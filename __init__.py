@@ -79,13 +79,13 @@ class TRT_Collection_Viewer_Selection_PreferencesPanel(AddonPreferences):
 
 def register():
     bpy.utils.register_class(brt_colection_selector_viewer)
-    bpy.utils.register_class(BRT_Collection_Viewer_Selection_PreferencesPanel)
+    bpy.utils.register_class(TRT_Collection_Viewer_Selection_PreferencesPanel)
     bpy.types.OUTLINER_HT_header.append(BRT_OUTLINER_UI_HEADER)
 
 
 def unregister():
     bpy.utils.unregister_class(brt_colection_selector_viewer)
-    bpy.utils.unregister_class(BRT_Collection_Viewer_Selection_PreferencesPanel)
+    bpy.utils.unregister_class(TRT_Collection_Viewer_Selection_PreferencesPanel)
     bpy.types.OUTLINER_HT_header.remove(BRT_OUTLINER_UI_HEADER)
 
 
